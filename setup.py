@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 classifiers = [
-    'Development Status :: 2 - Pre-Alpha',
+    'Development Status :: 4 - Beta',
     'Environment :: Console',
     'Intended Audience :: Education',
     'Operating System :: MacOS :: MacOS X',
@@ -16,7 +16,10 @@ classifiers = [
     'Operating System :: POSIX',
     'Programming Language :: Python',
     'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 3'
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
 ]
 
 setup(
