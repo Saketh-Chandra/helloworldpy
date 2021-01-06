@@ -1,4 +1,4 @@
-![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/Saketh-Chandra/helloworldpy)  ![PyPI - Status](https://img.shields.io/pypi/status/helloworldpy) ![PyPI - License](https://img.shields.io/pypi/l/helloworldpy) ![PyPI](https://img.shields.io/pypi/v/helloworldpy)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/helloworldpy)  ![PyPI - Status](https://img.shields.io/pypi/status/helloworldpy)  ![PyPI](https://img.shields.io/pypi/v/helloworldpy) ![PyPI - License](https://img.shields.io/pypi/l/helloworldpy)
 # helloworldpy
 
 ## This is a basic project for learning how to make the PIP([PyPI]) package
