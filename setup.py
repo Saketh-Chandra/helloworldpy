@@ -36,6 +36,6 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/Saketh-Chandra/helloworldpy',
-    keywords=['Hello', 'World', 'Hello-World'],
+    keywords=['Hello', 'World', 'Hello-World', 'Hello python'],
 
 )
