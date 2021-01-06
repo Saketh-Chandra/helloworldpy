@@ -19,11 +19,11 @@ optional arguments:
 ```
 
 ```bash 
-$ helloworldpy -name World
+$ helloworldpy --name World
   Hello World!
 ```
 ```bash 
-$ helloworldpy -name py
+$ helloworldpy --name py
   Hello Py!
 ```
 
