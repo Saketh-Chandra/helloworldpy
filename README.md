@@ -8,12 +8,14 @@
 Check the [changelog here](https://github.com/Saketh-Chandra/helloworldpy/releases/).
 ### Example:
 ```bash
-$ helloworldpy -h
+$ helloworldpy -h                                                         
 usage: helloworldpy [-h] [-V] [-n [NAME]]
 
 optional arguments:
--h, --help show this help message and exit -V, --version show program version -n [NAME], --name [NAME]
-output Hello Name! or Hello World!
+  -h, --help            show this help message and exit
+  -V, --version         show program version
+  -n [NAME], --name [NAME]
+                        output Hello Name! or Hello World!
 ```
 
 ```bash 
