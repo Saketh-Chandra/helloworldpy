@@ -10,8 +10,6 @@ optional arguments:
 output Hello Name! or Hello World!
 ```
 
-This a basic project to learn how to make PIP(PyPI) package
-
 ```bash 
 $ helloworldpy -name World
   Hello World!
@@ -19,4 +17,4 @@ $ helloworldpy -name World
 ```bash 
 $ helloworldpy -name py
   Hello Py!
-``
+```
