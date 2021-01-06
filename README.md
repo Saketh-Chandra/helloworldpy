@@ -3,6 +3,11 @@
 
 ## This is a basic project for learning how to make the PIP([PyPI]) package
 
+### To install the package!
+```bash
+$ pip install helloworldpy
+```
+
 # Changelog
 
 Check the [changelog here](https://github.com/Saketh-Chandra/helloworldpy/releases/).
