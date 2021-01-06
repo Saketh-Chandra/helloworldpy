@@ -10,7 +10,7 @@ $ pip install helloworldpy
 
 # Changelog
 
-Check the [changelog here](https://github.com/Saketh-Chandra/helloworldpy/releases/).
+Check the [changelog here].
 ### Example:
 ```bash
 $ helloworldpy -h                                                         
@@ -34,3 +34,4 @@ $ helloworldpy --name py
 
 
 [PyPI]: https://pypi.org/
+[changelog here]: https://github.com/Saketh-Chandra/helloworldpy/releases/
