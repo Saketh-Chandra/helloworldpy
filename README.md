@@ -3,6 +3,9 @@
 
 ## This is a basic project for learning how to make the PIP([PyPI]) package
 
+# Changelog
+
+Check the [changelog here](https://github.com/Saketh-Chandra/helloworldpy/releases/).
 ### Example:
 ```bash
 $ helloworldpy -h
