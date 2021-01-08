@@ -4,8 +4,13 @@
 ## This is a basic project for learning how to make the PIP([PyPI]) package
 
 ### To install the package!
-```bash
+#### On Windows:
+```CMD 
 $ pip install helloworldpy
+```
+#### On macOS and Linux:
+```
+$ sudo pip3 install helloworldpy
 ```
 
 # Changelog
