@@ -60,8 +60,6 @@ enter a number you guess: 34
 Cow : 0,Bull : 1
 enter a number you guess: 56
 Cow : 0,Bull : 0
-enter a number you guess: 67
-Cow : 0,Bull : 0
 enter a number you guess: 89
 Cow : 0,Bull : 1
 enter a number you guess: 94

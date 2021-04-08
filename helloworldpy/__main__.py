@@ -81,7 +81,7 @@ def main():
             ans_list = map(str, n_sample)
             answer = ''.join(ans_list)
             ans = cow_bull(n_sample, n_digits)
-            count = 0
+            count = 1
             while ans != int(answer):
                 ans = cow_bull(n_sample, n_digits)
                 count += 1
