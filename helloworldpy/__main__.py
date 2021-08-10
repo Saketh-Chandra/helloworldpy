@@ -1,8 +1,10 @@
 import argparse
+import sys
+
 from requests import get
 import random as ro
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 
 def checkip():
@@ -14,8 +16,18 @@ def checkip():
 def cow_bull(n_sample, n_digits):
     guess_n = input("enter a number you guess: ").zfill(n_digits)
     if 'answer' in guess_n:
-        # print(" answer is ", ''.join(n_sample))
-        pass
+        print("""
+        >>>>> 
+           Do you really want to give up?
+                Don't Give Up!!
+                I know you Can do it!
+                                           <<<<<<
+        """)
+        yn = (input("y/n : ").lower()).strip()
+        if ('yes' == yn) or ('y' == yn):
+            return 'answer'
+        else:
+            guess_n = input("enter a number you guess: ").zfill(n_digits)
     guess_n_list = list(str(guess_n))
     if len(guess_n_list) != len(set(guess_n_list)):
         print("Duplicates are not allowed!")
@@ -37,6 +49,53 @@ def cow_bull(n_sample, n_digits):
     print("Cow : {0},Bull : {1}".format(cow, bull))
     return int(guess_n)
 
+
+def play():
+    print(r"""
+            ##############--->>> Rules: <<---################
+            #   Note:                                       #
+            #       Bulls = correct code, correct position. #
+            #       Cows = correct code, wrong position.    #
+            #################################################
+            """)
+
+    try:
+        n_digits = int(input("how many digits number you need? "))
+        if n_digits >= 10:
+            raise Exception("Up to 10-digits number are allowed!")
+        if not type(n_digits) is int:
+            raise TypeError("Only integers are allowed")
+        if n_digits < 0:
+            raise Exception("Sorry, no numbers below zero")
+        n_sample = ro.sample(range(10), n_digits)
+        # print(n_sample)
+        ans_list = map(str, n_sample)
+        answer = ''.join(ans_list)
+        ans = cow_bull(n_sample, n_digits)
+        count = 1
+        while ans != int(answer):
+            ans = cow_bull(n_sample, n_digits)
+            count += 1
+            if "answer" == ans:
+                print(r"""
+                        |---------------------------------------|
+                                        YOU LOST!                 
+                            * Answer is "{}"
+                            * Number of attempts are {}
+                            * Because you used cheat code!!       
+                        |---------------------------------------|   
+                                """.format(answer, count))
+                sys.exit(0)
+
+        print(r"""
+                        |-------------------------------|
+                                    YOU WON!                 
+                          * Answer is "{}"
+                          * Number of attempts are {}       
+                        |-------------------------------|   
+                        """.format(answer, count))
+    except Exception as e:
+        print("Error : ", e)
 
 def main():
     parser = argparse.ArgumentParser()
@@ -60,42 +119,7 @@ def main():
     if args.checkip:
         checkip()
     if args.playgame:
-        print(r"""
-        ##############--->>> Rules: <<---################
-        #   Note:                                       #
-        #       Bulls = correct code, correct position. #
-        #       Cows = correct code, wrong position.    #
-        #################################################
-        """)
-
-        try:
-            n_digits = int(input("how many digits number you need? "))
-            if n_digits == 1:
-                raise Exception("At least you have to 2-digits number!")
-            if not type(n_digits) is int:
-                raise TypeError("Only integers are allowed")
-            if n_digits < 0:
-                raise Exception("Sorry, no numbers below zero")
-            # n_sample = ro.sample(range(10), n_digits)
-            n_sample = ro.choices(range(10), k=n_digits)
-            ans_list = map(str, n_sample)
-            answer = ''.join(ans_list)
-            ans = cow_bull(n_sample, n_digits)
-            count = 1
-            while ans != int(answer):
-                ans = cow_bull(n_sample, n_digits)
-                count += 1
-            # print("answer", answer)
-            # print("YOU WON!")
-            print(r"""
-                    |-------------------------------|
-                                YOU WON!                 
-                      * Answer is "{}"
-                      * Number of attempts are {}       
-                    |-------------------------------|   
-                    """.format(answer, count))
-        except Exception as e:
-            print("Error : ", e)
+        play()
     # Do argument parsing here (eg. with argparse) and anything else
     # you want your project to do. Return values are exit codes.
 

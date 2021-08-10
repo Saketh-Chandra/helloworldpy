@@ -77,6 +77,49 @@ Cow : 0,Bull : 2
 
 
 ```
+
+## Cheat codes were added
+```bash
+Hello World Py!
+
+        ##############--->>> Rules: <<---################
+        #   Note:                                       #
+        #       Bulls = correct code, correct position. #
+        #       Cows = correct code, wrong position.    #
+        #################################################
+
+how many digits number you need? 3
+enter a number you guess: 124
+Cow : 1,Bull : 0
+enter a number you guess: 412
+Cow : 1,Bull : 0
+enter a number you guess: 421
+Cow : 1,Bull : 0
+enter a number you guess: 456
+Cow : 0,Bull : 0
+enter a number you guess: 132
+Cow : 2,Bull : 0
+enter a number you guess: 213
+Cow : 0,Bull : 2
+enter a number you guess: answer
+
+        >>>>>
+           Do you really want to give up?
+                Don't Give Up!!
+                I know you Can do it!
+                                           <<<<<<
+
+y/n : y
+
+                    |---------------------------------------|
+                                    YOU LOST!
+                        * Answer is "203"
+                        * Number of attempts are 7
+                        * Because you used cheat code!!
+                    |---------------------------------------|
+
+
+```
 ## To Check System public IP Address
 ```bash 
 $ helloworldpy --checkip
