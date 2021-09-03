@@ -3,7 +3,7 @@
 
 ## This is a basic project for learning how to make the PIP([PyPI]) package
 
-### To install the package!
+### To install the package from PyPI!
 #### On Windows:
 ```bash 
 $ pip install helloworldpy
@@ -11,6 +11,17 @@ $ pip install helloworldpy
 #### On macOS and Linux:
 ```bash
 $ sudo pip3 install helloworldpy
+```
+
+### To install the package from GitHub Repo!
+#### On Windows:
+```bash 
+$ pip install https://github.com/Saketh-Chandra/helloworldpy/archive/master.zip
+
+```
+#### On macOS and Linux:
+```bash
+$ sudo pip3 install https://github.com/Saketh-Chandra/helloworldpy/archive/master.zip
 ```
 
 # Changelog
