@@ -137,6 +137,13 @@ $ helloworldpy --checkip
   Hello World Py!
   Public IP Address: 1▨0.2▨▨.0▨▨.▨3▨
 ```
+
+Build Guide:
+```
+python setup.py sdist bdist_wheel
+twine check dist/*
+```
+
 # License
 [MIT License]
 
