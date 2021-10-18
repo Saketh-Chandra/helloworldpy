@@ -28,7 +28,7 @@ setup(
     name="helloworldpy",
     version=__version__,
     packages=find_packages(),
-    install_requires=["requests", "idna==2.7"],
+    install_requires=["requests", "idna>=2.7"],
     entry_points={
         "console_scripts": [
             "helloworldpy = helloworldpy.__main__:main"

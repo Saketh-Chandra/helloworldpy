@@ -1,10 +1,11 @@
 import argparse
+import os
+import random as ro
 import sys
 
 from requests import get
-import random as ro
 
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 
 
 def checkip():
@@ -97,6 +98,7 @@ def play():
     except Exception as e:
         print("Error : ", e)
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-V", "--version", help="show program version", action="store_true")
@@ -108,20 +110,21 @@ def main():
     # Read arguments from the command line
     args = parser.parse_args()
 
+    # Check for --version or -V
     if args.name:
         print(f'Hello {str(" ".join(args.name)).title()}!')
+    # Check for --name or -n
+    elif args.version:
+        print(f"Version-{__version__}")
+    # Check for --checkip or -ip
+    elif args.checkip:
+        checkip()
+    # Check for --playgame or -g
+    elif args.playgame:
+        os.system('cls||clear')  # Clearing the terminal screen
+        play()
     else:
         print("Hello World Py!")
-
-    # Check for --version or -V
-    if args.version:
-        print(f"Version-{__version__}")
-    if args.checkip:
-        checkip()
-    if args.playgame:
-        play()
-    # Do argument parsing here (eg. with argparse) and anything else
-    # you want your project to do. Return values are exit codes.
 
 
 if __name__ == "__main__":
